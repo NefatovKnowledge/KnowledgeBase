@@ -1,168 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя база знаний Excel</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 0;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 50px;
-        }
-        
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-        
-        .card h3 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 1.4em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .links a {
-            display: flex;
-            align-items: center;
-            padding: 12px 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #495057;
-            transition: all 0.3s ease;
-            border-left: 4px solid transparent;
-        }
-        
-        .links a:hover {
-            background: #667eea;
-            color: white;
-            border-left-color: #764ba2;
-            transform: translateX(5px);
-        }
-        
-        .footer {
-            text-align: center;
-            color: white;
-            margin-top: 50px;
-            opacity: 0.8;
-        }
-        
-        /* Иконки эмодзи */
-        .links a::before {
-            content: '📄';
-            margin-right: 10px;
-            font-size: 1.1em;
-        }
-        
-        /* Разные иконки для разделов */
-        .lectures h3::before { content: '🎓 '; }
-        .homework h3::before { content: '📝 '; }
-        .resources h3::before { content: '🔧 '; }
-        .about h3::before { content: '📄 '; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>📊 База знаний по Excel</h1>
-            <p>Полный курс материалов для эффективной работы с Excel</p>
-        </div>
-        
-        <div class="grid">
-            <div class="card lectures">
-                <h3>Лекции</h3>
-                <div class="links">
-                    <a href="1_lectures/Лекция 1. Быстрая работа с данными в Excel.md">Лекция 1: Быстрая работа с данными</a>
-                    <a href="1_lectures/Лекция_2. Визуализация данных и сводные таблицы в Excel.md">Лекция 2: Визуализация и сводные таблицы</a>
-                </div>
-            </div>
-            
-            <div class="card homework">
-                <h3>Домашние задания</h3>
-                <div class="links">
-                    <a href="2_homework/ДЗ по Excel 1.md">ДЗ по Excel 1</a>
-                    <a href="2_homework/ДЗ по Excel 2.md">ДЗ по Excel 2</a>
-                </div>
-            </div>
-            
-            <div class="card resources">
-                <h3>Ресурсы</h3>
-                <div class="links">
-                    <a href="3_resources/Шорткаты для Excel.md">Шорткаты для Excel</a>
-                    <a href="3_resources/Полезные ресурсы по Excel.md">Полезные ресурсы</a>
-                </div>
-            </div>
-            
-            <div class="card about">
-                <h3>О проекте</h3>
-                <div class="links">
-                    <a href="README.md">README документация</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>Последнее обновление: <span id="date"></span></p>
-        </div>
-    </div>
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./styles/style.css">
 
-    <script>
-        // Автоматическая дата обновления
-        document.getElementById('date').textContent = new Date().toLocaleDateString('ru-RU');
-    </script>
-</body>
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+  </head>
+  <body>
+    <header>
+      <h1>Личный сайт</h1>
+      <p>Который сделан на основе готового шаблона</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Эта страница</a></li>
+          <li><a href="catalog.html">Другая страница</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h2>Первая секция</h2>
+          <p>Она обо мне</p>
+          <img src="images/image.png" alt="Человек и пароход">
+          <p>Но может быть и о семантике, я пока не решил.</p>
+        </section>
+        <section>
+          <h2>Вторая секция</h2>
+          <p>Она тоже обо мне</p>
+        </section>
+        <section>
+          <h2>И третья</h2>
+          <p>Вы уже должны были начать догадываться.</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
+    </footer>
+    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+  </body>
 </html>
